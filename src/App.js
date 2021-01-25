@@ -1,5 +1,6 @@
 import InfoContainer from './components/InfoContainer';
 import Map from './components/Map';
+import Table from './components/Table';
 import {
   Card,
   CardContent,
@@ -14,6 +15,7 @@ function App() {
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState('worldwide');
   const [countryInfo, setCountryInfo] = useState({});
+  const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
     fetch('https://disease.sh/v3/covid-19/all')
@@ -34,6 +36,7 @@ function App() {
             value: country.countryInfo.iso2,
           }));
 
+          setTableData(data);
           setCountries(countries);
         });
     };
@@ -97,6 +100,7 @@ function App() {
         <Card>
           <CardContent>
             <h3>Live Cases by Country</h3>
+            <Table countries={tableData} />
             <h3>Worldwide New Cases</h3>
           </CardContent>
         </Card>
