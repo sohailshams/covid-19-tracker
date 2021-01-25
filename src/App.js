@@ -1,6 +1,7 @@
 import InfoContainer from './components/InfoContainer';
 import Map from './components/Map';
 import Table from './components/Table';
+import { sortData } from './utils';
 import {
   Card,
   CardContent,
@@ -36,7 +37,8 @@ function App() {
             value: country.countryInfo.iso2,
           }));
 
-          setTableData(data);
+          const sortedData = sortData(data);
+          setTableData(sortedData);
           setCountries(countries);
         });
     };
