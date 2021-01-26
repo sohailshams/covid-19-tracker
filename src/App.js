@@ -1,6 +1,7 @@
 import InfoContainer from './components/InfoContainer';
 import Map from './components/Map';
 import Table from './components/Table';
+import Graph from './components/Graph';
 import { sortData } from './utils';
 import {
   Card,
@@ -104,6 +105,7 @@ function App() {
             <h3>Live Cases by Country</h3>
             <Table countries={tableData} />
             <h3>Worldwide New Cases</h3>
+            <Graph />
           </CardContent>
         </Card>
       </div>
