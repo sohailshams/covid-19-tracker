@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapContainer as LeafletMap, TileLayer, useMap } from 'react-leaflet';
+import { showDataOnMap } from '../utils';
 import './Map.css';
 
 // kboul help me to write ChangeMapView function
@@ -12,7 +13,7 @@ function ChangeMapView({ coords, zoom }) {
   return null;
 }
 
-function Map({ center, zoom }) {
+function Map({ countries, casesType, center, zoom }) {
   return (
     <div className="map">
       <LeafletMap center={center} zoom={zoom}>
@@ -21,6 +22,7 @@ function Map({ center, zoom }) {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
         <ChangeMapView coords={center} zoom={zoom} />
+        {showDataOnMap(countries, casesType)}
       </LeafletMap>
     </div>
   );
