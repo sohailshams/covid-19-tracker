@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography } from '@material-ui/core';
+import './InfoContainer.css';
 
 function InfoContainer({ title, cases, total }) {
   return (
