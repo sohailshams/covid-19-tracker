@@ -41,7 +41,7 @@ function App() {
             value: country.countryInfo.iso2,
           }));
 
-          const sortedData = sortData(data);
+          let sortedData = sortData(data);
           setTableData(sortedData);
           setCountries(countries);
         });
@@ -61,10 +61,21 @@ function App() {
     await fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        setCountryInfo(countryCode);
+        setCountry(countryCode);
         setCountryInfo(data);
+
+        // kboul help me to dynamically center the map to selected country
+        // https://stackoverflow.com/users/4929531/kboul
+
+        const {
+          countryInfo: { lat, long },
+        } = data;
+        setMapCenter({ lat, lng: long });
+
+        setMapZoom(4);
       });
   };
+
   return (
     <div className="app">
       <div className="app__statsmap">
