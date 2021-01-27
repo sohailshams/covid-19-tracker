@@ -54,3 +54,6 @@ export const showDataOnMap = (data, casesType = 'cases') =>
       </Popup>
     </Circle>
   ));
+
+export const statPrettier = (stat) =>
+  stat ? `+${numeral(stat).format('0.0a')}` : '+0';

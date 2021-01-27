@@ -2,7 +2,7 @@ import InfoContainer from './components/InfoContainer';
 import Map from './components/Map';
 import Table from './components/Table';
 import Graph from './components/Graph';
-import { sortData } from './utils';
+import { sortData, statPrettier } from './utils';
 import {
   Card,
   CardContent,
@@ -99,18 +99,18 @@ function App() {
         <div className="app__stats">
           <InfoContainer
             title="Coronavirus Cases"
-            cases={countryInfo.todayCases}
-            total={countryInfo.cases}
+            cases={statPrettier(countryInfo.todayCases)}
+            total={statPrettier(countryInfo.cases)}
           />
           <InfoContainer
             title="Recovered"
-            cases={countryInfo.todayRecovered}
-            total={countryInfo.recovered}
+            cases={statPrettier(countryInfo.todayRecovered)}
+            total={statPrettier(countryInfo.recovered)}
           />
           <InfoContainer
             title="Deaths"
-            cases={countryInfo.todayDeaths}
-            total={countryInfo.deaths}
+            cases={statPrettier(countryInfo.todayDeaths)}
+            total={statPrettier(countryInfo.deaths)}
           />
         </div>
         <Map countries={mapCountries} center={mapCenter} zoom={mapZoom} />

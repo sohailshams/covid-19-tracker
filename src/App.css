@@ -33,13 +33,3 @@ body {
     flex-direction: column;
   }
 }
-
-@media (max-width: 425px) {
-  .infoContainer {
-    margin-right: 5px;
-    font-size: 10px;
-  }
-  .infoContainer__title {
-    font-size: 10px !important;
-  }
-}

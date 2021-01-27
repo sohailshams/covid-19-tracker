@@ -19,3 +19,14 @@
   font-size: 0.8rem !important;
   margin-top: 15px !important;
 }
+
+@media (max-width: 425px) {
+  .infoContainer__cases {
+    font-size: 16px;
+  }
+
+  .infoContainer__title {
+    font-size: 10px !important;
+    font-weight: bold !important;
+  }
+}
