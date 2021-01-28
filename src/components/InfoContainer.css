@@ -1,5 +1,6 @@
 .infoContainer {
   flex: 1;
+  cursor: pointer;
 }
 
 .infoContainer:not(:last-child) {

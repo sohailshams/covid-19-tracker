@@ -2,9 +2,9 @@ import React from 'react';
 import { Card, CardContent, Typography } from '@material-ui/core';
 import './InfoContainer.css';
 
-function InfoContainer({ title, cases, total }) {
+function InfoContainer({ title, cases, total, ...props }) {
   return (
-    <Card className="infoContainer">
+    <Card onClick={props.onClick} className="infoContainer">
       <CardContent>
         <Typography className="infoContainer__title" color="textSecondary">
           {title}
