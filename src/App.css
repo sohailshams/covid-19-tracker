@@ -28,8 +28,15 @@ body {
   flex: 0.9;
 }
 
+.app__graphTitle {
+  margin: 20px 0 10px 0;
+}
+
 @media (max-width: 990px) {
   .app {
     flex-direction: column;
+  }
+  .app__statsmap {
+    margin-bottom: 20px;
   }
 }
