@@ -4,16 +4,16 @@ import { Circle, Popup } from 'react-leaflet';
 
 const casesTypeColors = {
   cases: {
-    hex: '#CC1034',
     multiplier: 250,
+    option: { color: '#cc1034', fillColor: '#cc1034' },
   },
   recovered: {
-    hex: '#7dd71d',
-    multiplier: 1200,
+    multiplier: 300,
+    option: { color: '#7dd71d', fillColor: '#7dd71d' },
   },
   deaths: {
-    hex: '#fb4443',
     multiplier: 2000,
+    option: { color: '#ff6c47', fillColor: '#ff6c47' },
   },
 };
 
@@ -27,9 +27,8 @@ export const showDataOnMap = (data, casesType = 'cases') =>
   data.map((country) => (
     <Circle
       center={[country.countryInfo.lat, country.countryInfo.long]}
-      color={casesTypeColors[casesType].hex}
-      fillColor={casesTypeColors[casesType].hex}
       fillOpacity={0.4}
+      pathOptions={casesTypeColors[casesType].option}
       radius={
         Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
       }
