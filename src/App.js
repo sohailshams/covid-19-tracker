@@ -99,18 +99,23 @@ function App() {
         </div>
         <div className="app__stats">
           <InfoContainer
+            isRed
+            active={casesType == 'cases'}
             onClick={(e) => setCasesType('cases')}
             title="Coronavirus Cases"
             cases={statPrettier(countryInfo.todayCases)}
             total={statPrettier(countryInfo.cases)}
           />
           <InfoContainer
+            active={casesType == 'recovered'}
             onClick={(e) => setCasesType('recovered')}
             title="Recovered"
             cases={statPrettier(countryInfo.todayRecovered)}
             total={statPrettier(countryInfo.recovered)}
           />
           <InfoContainer
+            isOrange
+            active={casesType == 'deaths'}
             onClick={(e) => setCasesType('deaths')}
             title="Deaths"
             cases={statPrettier(countryInfo.todayDeaths)}
