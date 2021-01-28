@@ -107,6 +107,7 @@ function App() {
             total={statPrettier(countryInfo.cases)}
           />
           <InfoContainer
+            isGreen
             active={casesType == 'recovered'}
             onClick={(e) => setCasesType('recovered')}
             title="Recovered"

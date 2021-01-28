@@ -9,6 +9,7 @@ function InfoContainer({
   active,
   isRed,
   isOrange,
+  isGreen,
   ...props
 }) {
   return (
@@ -22,7 +23,15 @@ function InfoContainer({
         <Typography className="infoContainer__title" color="textSecondary">
           {title}
         </Typography>
-        <h2 className="infoContainer__cases">{cases}</h2>
+        <h2
+          className={`infoContainer__cases ${
+            active & isGreen && 'infoContainer__cases--green'
+          } ${active & isRed && 'infoContainer__cases--red'} ${
+            active & isOrange && 'infoContainer__cases--orange'
+          }`}
+        >
+          {cases}
+        </h2>
         <Typography className="infoContainer__total" color="textSecondary">
           {total} Total
         </Typography>

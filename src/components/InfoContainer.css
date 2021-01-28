@@ -19,6 +19,17 @@
   border-color: #ff6c47;
 }
 
+.infoContainer__cases--green {
+  color: #7dd71d !important;
+}
+
+.infoContainer__cases--red {
+  color: #cc1034 !important;
+}
+.infoContainer__cases--orange {
+  color: #ff6c47 !important;
+}
+
 .infoContainer__cases {
   color: #cc1034;
   font-weight: 600;
