@@ -12,6 +12,14 @@ body {
   padding: 20px;
 }
 
+.app__title {
+  color: #cc1034;
+}
+
+.app__dropdown {
+  background-color: white !important;
+}
+
 .app__header {
   display: flex;
   justify-content: space-between;
@@ -38,5 +46,14 @@ body {
   }
   .app__statsmap {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .MuiInputBase-root {
+    font-size: 12px !important;
+  }
+  .app__dropdown {
+    min-width: 110px !important;
   }
 }

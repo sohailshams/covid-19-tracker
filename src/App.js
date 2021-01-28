@@ -83,7 +83,7 @@ function App() {
     <div className="app">
       <div className="app__statsmap">
         <div className="app__header">
-          <h1>Covid-19 Tracker</h1>
+          <h1 className="app__title">Covid-19 Tracker</h1>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
