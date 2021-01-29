@@ -35,6 +35,14 @@ body {
 .app__statsmap {
   flex: 0.9;
 }
+@media (max-width: 425px) {
+  .MuiInputBase-root {
+    font-size: 12px !important;
+  }
+  .app__dropdown {
+    min-width: 110px !important;
+  }
+}
 
 .app__graphTitle {
   margin: 20px 0 10px 0;

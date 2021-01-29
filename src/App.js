@@ -13,6 +13,7 @@ import {
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'leaflet/dist/leaflet.css';
+import { v1 as uuid } from 'uuid';
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -84,7 +85,7 @@ function App() {
       <div className="app__statsmap">
         <div className="app__header">
           <h1 className="app__title">Covid-19 Tracker</h1>
-          <FormControl className="app__dropdown">
+          <FormControl key={uuid()} className="app__dropdown">
             <Select
               variant="outlined"
               onChange={onCountryChange}
@@ -92,7 +93,9 @@ function App() {
             >
               <MenuItem value="worldwide">Worldwide</MenuItem>
               {countries.map((country) => (
-                <MenuItem value={country.value}>{country.name}</MenuItem>
+                <MenuItem key={uuid()} value={country.value}>
+                  {country.name}
+                </MenuItem>
               ))}
             </Select>
           </FormControl>
