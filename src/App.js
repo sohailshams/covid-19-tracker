@@ -70,13 +70,17 @@ function App() {
 
         // kboul help me to dynamically center the map to selected country
         // https://stackoverflow.com/users/4929531/kboul
+        if (typeof data.countryInfo !== 'undefined') {
+          const {
+            countryInfo: { lat, long },
+          } = data;
+          setMapCenter({ lat, lng: long });
 
-        const {
-          countryInfo: { lat, long },
-        } = data;
-        setMapCenter({ lat, lng: long });
-
-        setMapZoom(4);
+          setMapZoom(4);
+        } else {
+          setMapCenter({ lat: 34.80746, lng: -40.4796 });
+          setMapZoom(3);
+        }
       });
   };
 
