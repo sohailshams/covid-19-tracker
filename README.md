@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Covid-19-Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React.js project Covid-19-Tracker (with React Hooks, Reactchartjs, & Firebase)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Covid-19-Tracker application is developed in connection to my learning of **React**. Users can see the total number of deaths, recovered cases and total number of active cases. Users can also see the detail of individual country. This application is deployed on **firebase**.
 
-### `yarn start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **HTML5** - HTML5 is used to create the the structure of the website.
+- **CSS3** - CSS3 is used for custom styling the HTML5 elements.
+- **[React](https://reactjs.org/)** - React functional components are used to developed this application.
+- **React Hooks** - React hooks **useEffect** and **useState** are used in this application.
+- **[Material UI](https://material-ui.com/)** - Icons in this application are used from Material UI.
+- **[Ract Chartjs](https://www.npmjs.com/package/react-chartjs-2)** - Used to display data on the chart.
+- **[Numeraljs](http://numeraljs.com/)** - Used for formatting and manuplating numbers.
+- **[uuid](https://www.npmjs.com/package/uuid)** - Used to give unique id's.
+- **[Git](https://git-scm.com/)** - Used as a distributed version control system.
+- **[VS Code](https://code.visualstudio.com/)** - Used as an IDE.
+- **[Github](https://github.com/)** - Used as a remote repository.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Deployment
 
-### `yarn test`
+The deployed project and project's **github repository** can be viewed on following links. To test card payments use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **[Covid-19-Tracker Live Page](https://covid-19-tracker-78734.web.app/)**
 
-### `yarn build`
+- **[Covid-19-Tracker Live Page Github Repository](https://github.com/sohailshams/covid-19-tracker)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Credits
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Acknowledgements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. PAPA FAM'S **Covid-19-Tracker** project was great source of inspiration. I followed it to design and develop my **Covid-19-Tracker** application.
+2. I would like thank my lovely wife **Ayesha**, my sons **Ibrahim** and **Ismail** for their support and motivation.
 
-### `yarn eject`
+## Disclaimer
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for educational purposes only.
