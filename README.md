@@ -22,11 +22,11 @@ Covid-19-Tracker application is developed in connection to my learning of **Reac
 
 ## Deployment
 
-The deployed project and project's **github repository** can be viewed on following links. To test card payments use
+The deployed project and project's **github repository** can be viewed on following links.
 
 - **[Covid-19-Tracker Live Page](https://covid-19-tracker-78734.web.app/)**
 
-- **[Covid-19-Tracker Live Page Github Repository](https://github.com/sohailshams/covid-19-tracker)**
+- **[Covid-19-Tracker Github Repository](https://github.com/sohailshams/covid-19-tracker)**
 
 ## Credits
 
